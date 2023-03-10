@@ -1,0 +1,129 @@
+/* Write some CSS below */
+
+body {
+   background-color: white;
+   color: black;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 600;
+   font-size: 18px;
+   margin: 0px;
+}
+
+h1 {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-size: 60px;
+   color: white;
+   font-weight: 1100;
+   text-align: center;
+}
+
+h2 {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color:darkblue;
+   font-weight: 900;
+   text-align: center;
+   font-size: 35px;
+   
+}
+
+h3 {
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color:darkblue;
+   font-weight: 700;   
+   text-align: center;
+   font-size: 22px;
+}
+
+.banner {
+   padding: 150px 0;
+   margin: 0;
+   background-image: url(image/Spy\ 1.png);
+   background-size: cover;
+   background-position: center;
+   text-align: center;
+}
+
+#banner-p {
+   color: white;
+   font-size: 24px;
+   font-weight: 400;
+   margin-bottom: 50px;
+}
+
+.btn-blue {
+   background-color:darkblue;
+   color: #fcfcfc;
+   text-decoration: none;
+   padding: 20px 50px;
+   font-weight: 600;
+   border-radius: 3px;
+}
+
+
+.container {
+   margin: 50px auto;
+   width: 900px;
+}
+
+.card-white {
+   background-color: rgb(255, 255, 255);
+   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+   font-size: 14px;
+   font-weight: 400;
+   padding: 24px;
+   margin:8px;
+}
+
+.card-white-img {
+   height: 200;
+   width: 100%;
+   object-fit: cover;
+}   
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 15px;
+}
+
+div {
+   display: block;
+}
+
+.btn-blue:hover{
+   background-color: black;
+   color: white;
+}    
+
+.footer{
+   background-color:darkblue;
+   color: white;
+   padding: 25px 50px;
+   height: 50px;
+   text-align: center;
+}  
+
+#text-center{
+   text-align:center;
+}  
+
+/* breaking points */
+
+@media (max-widht: 900px) {
+   .cards {
+     grid-template-columns: 1fr 1fr; 
+   }
+   .container {
+     width: 700px;
+   } 
+   
+ }
+ 
+ @media (max-widht: 480px) {
+   .cards {
+     grid-template-columns: 1fr; 
+   }
+   .container {
+     width: 250px;
+   } 
+}
